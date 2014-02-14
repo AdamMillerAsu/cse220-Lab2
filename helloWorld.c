@@ -2,7 +2,7 @@
 /Comment from Adam Miller
 #include<stdio.h>
 
-main()
+main() /* the main method */
 {
     printf("Hello World"); /* This prints out Hello World*/
 
