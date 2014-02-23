@@ -7,6 +7,7 @@ int main (int argc, const char *argv[])
     char source_name[MAX_FILE_NAME_LENGTH];
     char date[DATE_STRING_LENGTH];
     char firstline[80];
+    BOOLEAN notEndOfFile;
 
    /* Missing Code Here */ 
    
@@ -15,7 +16,12 @@ int main (int argc, const char *argv[])
    //puts(firstline);
 
    source_file=init_lister(argv[1],source_name,date);
-      
+   
+   do{
+
+   notEndOfFile=get_source_line(source_file,source_name,date);
+
+   }while(notEndOfFile==TRUE);
 
 
 return 0;
@@ -30,8 +36,8 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
    //*source_file_name=name;
    strcpy(source_file_name,name);
     file=fopen(name,"r");
-   // time(&timer);
-   // *dte=timer;    
+   dte=ctime(&timer);
+       
 
 
     return file;
@@ -41,11 +47,16 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
     char print_buffer[MAX_SOURCE_LINE_LENGTH + 9];
     char source_buffer[MAX_SOURCE_LINE_LENGTH];
     static int line_number = 0;
-    
-    if (1) //This is missing a condition
+    int eofresult=1;
+
+    eofresult= feof(src_file);
+
+    if (eofresult==0)
     {
-		/*  Missing Code Here */
-        return (TRUE);
+     fgets(source_buffer,80,src_file);	/*  Missing Code Here */
+     puts(source_buffer);
+
+   return (TRUE);
     }
     else
     {
