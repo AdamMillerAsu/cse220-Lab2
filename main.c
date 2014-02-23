@@ -34,8 +34,13 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     
     /* Missing Code Here*/
    //*source_file_name=name;
+     file=fopen(name,"r");
+   
+
+    if(file==NULL){ perror ("File loading returned NULL, did you specify a file"); }
+    
+
    strcpy(source_file_name,name);
-    file=fopen(name,"r");
    dte=ctime(&timer);
        
 
