@@ -7,6 +7,8 @@ int main (int argc, const char *argv[])
     char date[DATE_STRING_LENGTH];
     
    /* Missing Code Here */
+   source_file= fopen("test","r");
+   
     return 0;
 }
 FILE *init_lister(const char *name, char source_file_name[], char dte[])
