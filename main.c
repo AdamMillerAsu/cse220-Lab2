@@ -38,7 +38,7 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     //the above line checks for a NULL file. Prints the error if there is no argument
 
     strcpy(source_file_name,name); //copies the argv to the source_file array
-    dte=ctime(&timer); 
+    strcpy(dte,ctime(&timer)); 
      
 
 
