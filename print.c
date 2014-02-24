@@ -17,7 +17,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     {
         line[81] = '\0';
     }
-    printf("%s\n", line);
+    printf("%s", line);
     if (save_chp)
     {
         /* Missing Code Here */
