@@ -50,13 +50,15 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
     char source_buffer[MAX_SOURCE_LINE_LENGTH];
     static int line_number = 0;
     int eofresult=1;
-
+    
+    
+    fgets(source_buffer,80,src_file);
     eofresult= feof(src_file); //checks for the end of file and saves result
 
     if (eofresult==0) //if it's not the end of the file continue
     {
      line_number++;
-     fgets(source_buffer,80,src_file);
+     
      
      //next 2 lines create the print buffer from the linenumber and sourcebuffer
 
