@@ -10,7 +10,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     
     if (++line_count > MAX_LINES_PER_PAGE)
     {
-        print_page_header(source_name_to_print, date_to_print)
+        print_page_header(source_name_to_print, date_to_print);
         line_count = 1;
     }
     if (strlen(line) > MAX_PRINT_LINE_LENGTH) 
