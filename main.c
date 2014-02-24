@@ -1,5 +1,9 @@
 #include "common.h"
 
+//Mike Burgett
+//Daniel Wong
+//Adam Miller
+//CSE220 Lab 2 Phase 2
 
 int main (int argc, const char *argv[])
 {
