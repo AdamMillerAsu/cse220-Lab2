@@ -13,6 +13,11 @@
 #define MAX_LINES_PER_PAGE      50
 #define DATE_STRING_LENGTH      26
 
+//Mike Burgett
+//Daniel Wong
+//Adam Miller
+//CSE220 Lab 2 Phase 2
+
 typedef enum {
     FALSE, TRUE,
 }BOOLEAN;
