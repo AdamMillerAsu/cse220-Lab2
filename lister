@@ -1,7 +1,7 @@
-# Adam Miller
-# Michael Burgett
-# Daniel Wong
-# lister
+// Adam Miller
+// Michael Burgett
+// Daniel Wong
+// lister
 
 
 lister: print.c main.c common.h
