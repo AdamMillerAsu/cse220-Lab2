@@ -1,5 +1,10 @@
 #include "common.h"
 
+//Mike Burgett
+//Daniel Wong
+//Adam Miller
+//CSE220 Lab 2 Phase 2
+
 static void print_page_header(char source_name[], char date[]);
 
 void print_line(char line[], char source_name_to_print[], char date_to_print[])
